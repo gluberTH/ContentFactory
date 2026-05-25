@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium AI Content Factory Engine</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1, h2, h3 { color: #2c3e50; }
+        code {
+            background: #f4f4f4;
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-size: 0.9em;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        pre code {
+            background: none;
+            padding: 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th { background-color: #f8f9fa; }
+        blockquote {
+            border-left: 4px solid #3498db;
+            margin: 0;
+            padding-left: 15px;
+            color: #555;
+            background: #f9f9f9;
+            padding: 10px 15px;
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid #eaeaea;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+
+<h1>🚀 Premium AI Content Factory Engine</h1>
+
+<p>Welcome to the <strong>Premium AI Content Factory Engine</strong>—a professional, enterprise-grade Python command-line utility built to automatically generate high-converting, SEO-optimized, and industry-grade articles. Designed for content managers, publishers, copywriters, and marketers, this tool automates a rigorous 12-step sequential generation workflow inspired by advanced editorial frameworks.</p>
+
+<hr>
+
+<h2>🌟 Key Features</h2>
+
+<ul>
+    <li><strong>Automated Idea Brainstorming</strong>: Leverages OpenAI to brainstorm 5 highly engaging, non-cliché topic angles based on your core seed topic.</li>
+    <li><strong>Interactive Terminal Selection</strong>: Pick your target topic directly from an intuitive, interactive console menu.</li>
+    <li><strong>Deep Target Avatar Analysis</strong>: Automatically models a comprehensive psychological profile of your ideal reader, pinpointing their goals, frustrations, fears, and objections.</li>
+    <li><strong>Rigorous Thesis Outlining</strong>: Builds a 5-to-7 section logical article flow (hook, body, practical checklist, high-conversion call-to-action) and details it with 3–5 key arguments per section.</li>
+    <li><strong>Expert-grade Writing style</strong>: Sequentially drafts each article section, naturally embedding real-world analogies, statistics, and highly realistic expert quotes.</li>
+    <li><strong>Semantic LSI Optimization</strong>: Generates a set of 10–15 clustered Latent Semantic Indexing keywords related to your core topic.</li>
+    <li><strong>Deep Editorial Pass</strong>: Runs a final editorial optimization pass to naturally inject keywords, smooth out transitions, and rigorously scrub standard AI clichés (such as <em>"In today's fast-paced world..."</em>, <em>"Moreover"</em>, <em>"In conclusion"</em>).</li>
+    <li><strong>Beautiful Production Outputs</strong>:
+        <ul>
+            <li><strong>Markdown (<code>.md</code>)</strong>: A cleanly formatted draft, ready to copy and paste into any CMS or editor.</li>
+            <li><strong>Premium HTML (<code>.html</code>)</strong>: A beautiful, fully styled page featuring a gorgeous, responsive CSS design (complete with Outfit/Inter typography, responsive paddings, dark/light scheme support, styled tables, and custom blockquotes for expert quotes).</li>
+        </ul>
+    </li>
+    <li><strong>Smart Spreadsheet Management</strong>:
+        <ul>
+            <li>Automatically generates a styled <code>input.xlsx</code> template if missing.</li>
+            <li>Automatically appends a comprehensive publishing log row to a persistent <code>output.xlsx</code> database on every successful run.</li>
+        </ul>
+    </li>
+</ul>
+
+<hr>
+
+<h2>⚙️ Installation & Setup</h2>
+
+<p>This application is designed in modular, lightweight Python. Follow these quick steps to get started:</p>
+
+<h3>1. Prerequisites</h3>
+<p>Ensure you have <strong>Python 3.8+</strong> installed on your system.</p>
+
+<h3>2. Install Dependencies</h3>
+<p>Navigate to the tool's directory in your terminal and run:</p>
+<pre><code class="language-bash">pip install -r requirements.txt</code></pre>
+
+<h3>3. Configure API Credentials</h3>
+<ol>
+    <li>Copy the <code>.env.example</code> file and rename it to <code>.env</code>:
+        <pre><code class="language-bash">cp .env.example .env</code></pre>
+    </li>
+    <li>Open the <code>.env</code> file in your favorite text editor and paste your OpenAI API Key:
+        <pre><code class="language-env">OPENAI_API_KEY=your_actual_openai_api_key_here
+OPENAI_MODEL=gpt-4o</code></pre>
+    </li>
+</ol>
+<blockquote>
+    <p>💡 <em>Note: We recommend <code>gpt-4o</code> for maximum analytical depth and editorial quality, but you can also use <code>gpt-4o-mini</code> for highly cost-efficient drafting.</em></p>
+</blockquote>
+
+<hr>
+
+<h2>📂 Configuration (Input File)</h2>
+
+<p>Before running, the tool requires information about your seed topic, audience, and offer. This is managed entirely inside a clean, modern Excel spreadsheet:</p>
+
+<p>When you run the tool for the first time, it will automatically generate a highly styled <strong><code>input.xlsx</code></strong> file in the root directory. Open it in Microsoft Excel or Google Sheets and configure the following columns:</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Column Header</th>
+            <th>Description</th>
+            <th>Example Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Seed Topic/Keyword</strong></td>
+            <td>The main topic or core subject of the article.</td>
+            <td><em>Real Estate Investing in Pattaya for Digital Nomads</em></td>
+        </tr>
+        <tr>
+            <td><strong>Target Audience Brief</strong></td>
+            <td>High-level summary of your target reader.</td>
+            <td><em>Young remote workers and digital nomads looking for high passive yield.</em></td>
+        </tr>
+        <tr>
+            <td><strong>Product/Service Description</strong></td>
+            <td>The product or service you want to naturally promote.</td>
+            <td><em>GrandisVillas Premium Rental Management (8% guaranteed ROI).</em></td>
+        </tr>
+        <tr>
+            <td><strong>Primary SEO Keyword</strong></td>
+            <td>The core search term you want to rank for.</td>
+            <td><em>Pattaya property investment digital nomads</em></td>
+        </tr>
+        <tr>
+            <td><strong>Main Goal</strong></td>
+            <td>What you want the reader to do after reading (CTA).</td>
+            <td><em>Book a free Zoom property consultation on our website.</em></td>
+        </tr>
+    </tbody>
+</table>
+
+<p>Save the spreadsheet. You are now ready to produce content!</p>
+
+<hr>
+
+<h2>🚀 How to Run</h2>
+
+<p>Execute the engine with a single command:</p>
+<pre><code class="language-bash">python content_factory.py</code></pre>
+
+<h3>The Generation Workflow:</h3>
+<ol>
+    <li><strong>Init</strong>: The engine reads your variables from <code>input.xlsx</code> and initiates a connection to OpenAI.</li>
+    <li><strong>Concept Selection</strong>: The engine lists 5 highly compelling article ideas in your terminal.</li>
+    <li><strong>Choice</strong>: Enter <code>1</code> to <code>5</code> to choose which angle to write.</li>
+    <li><strong>Drafting</strong>: The engine builds the plan, details it into theses, saves the intermediate plan file to the <code>output/</code> folder, and drafts the article section-by-section.</li>
+    <li><strong>Editorial Pass & Save</strong>: Semantic LSI keywords are generated, injected seamlessly, and final files are saved.</li>
+</ol>
+
+<hr>
+
+<h2>📈 Outputs</h2>
+
+<p>All finished articles are saved directly into the <strong><code>output/</code></strong> folder:</p>
+<ul>
+    <li><strong><code>output/plan_[slug].md</code></strong>: The detailed thesis outline for editorial review.</li>
+    <li><strong><code>output/[slug].md</code></strong>: Polished final article in clean Markdown.</li>
+    <li><strong><code>output/[slug].html</code></strong>: Premium web article. Double-click to open in any browser or embed directly into your landing page.</li>
+    <li><strong><code>output.xlsx</code></strong>: A continuous spreadsheet database keeping track of all generated content dates, keywords, paths, and metadata.</li>
+</ul>
+
+<hr>
+
+<h2>🛡️ License</h2>
+
+<p>This product is sold exclusively via Gumroad. Sharing, redistributing, or reselling this source code is strictly prohibited. Thank you for supporting independent creators!</p>
+
+</body>
+</html>
